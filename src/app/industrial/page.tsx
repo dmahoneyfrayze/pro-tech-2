@@ -13,14 +13,9 @@ export default function IndustrialPage() {
     <div className={styles.page}>
       <Header />
       <main>
-        <div className={styles.hero}>
+        <section className={styles.services}>
           <div className="container">
-            <h1>Industrial Uptime: The Only Metric</h1>
-            <p>Leveraging North West Ontario&apos;s largest inventory to eliminate catastrophic downtime for local industry.</p>
-            <Link href="/quote?sector=industrial" className="btn btn-primary">Request Uptime Consultation</Link>
-          </div>
-        </div>
-
+            <div className={styles.grid}>
               <div className={styles.item}>
                 <h3>Mining & Heavy Extraction</h3>
                 <p>Immediate replacement for heavy-duty motors and pumps in environments where shipping delays equate to massive revenue loss.</p>
