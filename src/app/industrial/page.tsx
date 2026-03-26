@@ -21,21 +21,46 @@ export default function IndustrialPage() {
           </div>
         </div>
 
-        <section className={styles.services}>
-          <div className="container">
-            <div className={styles.grid}>
               <div className={styles.item}>
                 <h3>Mining & Heavy Extraction</h3>
-                <p>Immediate replacement for heavy-duty motors and pumps in environments where delays equate to massive revenue loss.</p>
+                <p>Immediate replacement for heavy-duty motors and pumps in environments where shipping delays equate to massive revenue loss.</p>
+                <ul className={styles.sectorList}>
+                  <li>High-performance SLD pumps</li>
+                  <li>Heavy-duty extraction motors</li>
+                  <li>Emergency 24/7 technical support</li>
+                </ul>
               </div>
               <div className={styles.item}>
                 <h3>Paper & Pulp Mills</h3>
                 <p>Maintaining the high-volume water movement systems and electric motors essential for continuous regional production.</p>
+                <ul className={styles.sectorList}>
+                  <li>Continuous-duty systems</li>
+                  <li>Precision repair & rewind</li>
+                  <li>On-site inventory readiness</li>
+                </ul>
               </div>
               <div className={styles.item}>
                 <h3>Air & Gas Compressors</h3>
-                <p>Establishing regional dominance in the repair and supply of industrial air systems—a high-frequency maintenance category.</p>
+                <p>Established regional authority in the repair and supply of industrial air systems—a high-frequency maintenance category.</p>
+                <ul className={styles.sectorList}>
+                  <li>System audits & repair</li>
+                  <li>Energy-efficient motor swaps</li>
+                  <li>Authorized parts supply</li>
+                </ul>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section className={styles.partnership}>
+          <div className="container">
+            <div className={styles.partnershipContent}>
+              <h2>Industrial Technical Partnership</h2>
+              <p>
+                Move beyond simple procurement. We offer formal Technical Partnership contracts to ensure Zero-Delay inventory for your critical assets. 
+                Whether you are a local infrastructure neighbor or a remote mining operation, we de-risk your business continuity.
+              </p>
+              <Link href="/quote?sector=industrial" className="btn btn-outline">Apply for Technical Partnership</Link>
             </div>
           </div>
         </section>
