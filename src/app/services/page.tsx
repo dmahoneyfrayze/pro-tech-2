@@ -33,8 +33,8 @@ export default function ServicesPage() {
       <main>
         <section className={styles.hero}>
           <div className="container">
-            <h1>Specialized Field Services</h1>
-            <p>From precision motor rewinds to full-scale pump infrastructure installation.</p>
+            <h1>Regional Technical Authority</h1>
+            <p>Moving beyond hardware to professional consultation. Translating 50 years of &quot;stellar jobs&quot; into guaranteed industrial and residential uptime.</p>
             <div className={styles.emergency}>
               <strong>EMERGENCY? CALL:</strong> <a href="tel:807-346-8324">807-346-8324</a>
             </div>
@@ -55,6 +55,23 @@ export default function ServicesPage() {
                   </ul>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        <section className={styles.partnership}>
+          <div className="container">
+            <div className={styles.partnershipCard}>
+              <h2>Technical Partnership Program</h2>
+              <p>
+                We establish formal maintenance contracts with regional high-volume water users. 
+                Our &quot;Zero-Delay&quot; inventory agreements ensure you never face a day of catastrophic downtime. 
+                Whether you&apos;re a local infrastructure neighbor like Central Car Wash or a large-scale agricultural operation, 
+                our Technical Partnerships provide the ultimate de-risking strategy.
+              </p>
+              <div className={styles.expertNote}>
+                <strong>Consultative Mastery:</strong> Partner with specialists like Dom to ensure your complex systems—from camp UV filters to industrial motors—are built to last.
+              </div>
             </div>
           </div>
         </section>
