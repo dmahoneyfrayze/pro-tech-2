@@ -1,3 +1,5 @@
+import Link from 'next/link';
+import styles from './hero.module.css';
 import { ASSETS } from '@/config/assets';
 
 export default function Hero() {
@@ -5,11 +7,11 @@ export default function Hero() {
     <section className={styles.hero} style={{ backgroundImage: `linear-gradient(rgba(9, 30, 66, 0.8), rgba(9, 30, 66, 0.8)), url(${ASSETS.images.hero.main})` }}>
       <div className="container">
         <div className={styles.content}>
-          <div className={styles.badge}>Northwestern Ontario&apos;s Water & Power Authority</div>
-          <h1>Industrial-Strength Solutions for Home & Industry</h1>
+          <div className={styles.badge}>North West Ontario&apos;s Largest Stocking Supplier</div>
+          <h1>99.99% Water Purity. Industrial Uptime. Guaranteed.</h1>
           <p>
-            The region&apos;s largest stocking supplier of pumps, electric motors, and purification systems. 
-            From commercial uptime to residential assurance, we keep the water flowing and the power running.
+            Built on a 50-year legacy of technical mastery, Pro-Tech is the region&apos;s premier authority on water and power solutions. 
+            While others &quot;order in&quot; parts, we solve your emergency today from the largest regional inventory of Canadian-made equipment.
           </p>
           
           <div className={styles.ctaGroup}>

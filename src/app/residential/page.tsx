@@ -15,9 +15,9 @@ export default function ResidentialPage() {
       <main>
         <div className={styles.hero}>
           <div className="container">
-            <h1>Pure Water for Your Family Home</h1>
-            <p>Northwestern Ontario&apos;s trusted experts for residential well systems and purification.</p>
-            <Link href="/quote?sector=residential" className="btn btn-primary">Fix My Water Issue</Link>
+            <h1>The 99.99% Water Assurance</h1>
+            <p>Repositioning your home water system from hardware to a family health and safety asset.</p>
+            <Link href="/quote?sector=residential" className="btn btn-primary">Secure My Water Purity</Link>
           </div>
         </div>
 
@@ -46,9 +46,12 @@ export default function ResidentialPage() {
         <section className={styles.support}>
           <div className="container">
             <div className={styles.supportCard}>
-              <h2>Cottage & Remote Home Specialists</h2>
-              <p>We understand the unique needs of property owners across NW Ontario. From seasonal startups to year-round reliability, we serve you.</p>
-              <a href="tel:807-346-8324" className="btn btn-primary">Call Support: 807-346-8324</a>
+              <h2>Strategic Campaign: Sub-Sewer Level Expansion</h2>
+              <p>
+                Finishing your basement? Our specialized sewage pumps are the primary enablers for high-value bathrooms and laundry suites below the sewer line. 
+                Don&apos;t risk thousands in septic failure—install the region&apos;s best high-performance pumps.
+              </p>
+              <Link href="/quote?sector=service" className="btn btn-primary">Start Your Basement Expansion</Link>
             </div>
           </div>
         </section>

@@ -15,9 +15,9 @@ export default function IndustrialPage() {
       <main>
         <div className={styles.hero}>
           <div className="container">
-            <h1>Industrial & Commercial Engineering</h1>
-            <p>Maximizing uptime for Northwestern Ontario&apos;s critical infrastructure.</p>
-            <Link href="/quote?sector=industrial" className="btn btn-primary">Request Industrial Consultation</Link>
+            <h1>Industrial Uptime: The Only Metric</h1>
+            <p>Leveraging North West Ontario&apos;s largest inventory to eliminate catastrophic downtime for local industry.</p>
+            <Link href="/quote?sector=industrial" className="btn btn-primary">Request Uptime Consultation</Link>
           </div>
         </div>
 
@@ -25,16 +25,16 @@ export default function IndustrialPage() {
           <div className="container">
             <div className={styles.grid}>
               <div className={styles.item}>
-                <h3>High-Volume Pump Systems</h3>
-                <p>Custom-engineered solutions for mining, municipal, and industrial applications. We stock the heavy-duty equipment others only order.</p>
+                <h3>Mining & Heavy Extraction</h3>
+                <p>Immediate replacement for heavy-duty motors and pumps in environments where delays equate to massive revenue loss.</p>
               </div>
               <div className={styles.item}>
-                <h3>Electric Motor Sales & Service</h3>
-                <p>Authorized dealer for Leeson and more. Full-service repair, rewinding, and preventative maintenance to keep your facility running.</p>
+                <h3>Paper & Pulp Mills</h3>
+                <p>Maintaining the high-volume water movement systems and electric motors essential for continuous regional production.</p>
               </div>
               <div className={styles.item}>
-                <h3>Commercial Water Treatment</h3>
-                <p>Large-scale purification and filtration systems designed for regulatory compliance and operational excellence.</p>
+                <h3>Air & Gas Compressors</h3>
+                <p>Establishing regional dominance in the repair and supply of industrial air systems—a high-frequency maintenance category.</p>
               </div>
             </div>
           </div>
@@ -43,9 +43,9 @@ export default function IndustrialPage() {
         <section className={styles.inventory}>
           <div className="container">
             <div className={styles.inventoryBox}>
-              <h2>The Region&apos;s Largest Stockpile</h2>
-              <p>In the industrial world, every minute of downtime counts. We maintain an massive on-site inventory in Thunder Bay to ensure immediate availability of critical components.</p>
-              <Link href="/shop" className="btn btn-accent">Browse Industrial Inventory</Link>
+              <h2>The &quot;Inventory Readiness&quot; Advantage</h2>
+              <p>While non-local competitors &quot;order in&quot; parts, we solve the problem today. Our status as the region’s only authorized stocking supplier allows us to de-risk your purchase and guarantee zero-delay service.</p>
+              <Link href="/shop" className="btn btn-accent">Check Inventory Status</Link>
             </div>
           </div>
         </section>

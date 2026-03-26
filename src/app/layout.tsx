@@ -14,9 +14,17 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Pro-Tech Sales & Service | Water Pumps & Electric Motors Thunder Bay",
-  description: "Northwestern Ontario's largest stocking supplier of water pumps, electric motors, and purification systems. Commercial, Industrial, and Residential sales, service, and installation.",
-  keywords: ["water pumps Thunder Bay", "electric motor repair", "water purification Ontario", "industrial pump installation"],
+  title: "Pro-Tech Sales & Service | 99.99% Water Purity & Industrial Uptime",
+  description: "North West Ontario’s premier authority on water and power solutions. Largest stocking supplier of Canadian-made pumps and electric motors. Authorized Excalibur, Pompco, and Leeson dealer.",
+  keywords: [
+    "Industrial air compressor repair Thunder Bay", 
+    "Authorized Pompco dealer ON", 
+    "Electric motor repair shop Thunder Bay",
+    "Water filtration Thunder Bay",
+    "UV water treatment systems North West Ontario",
+    "Sewage pump installation",
+    "Water softener repair 807"
+  ],
 };
 
 export default function RootLayout({

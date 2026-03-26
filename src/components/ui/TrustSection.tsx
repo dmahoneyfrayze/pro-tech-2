@@ -1,18 +1,19 @@
 import styles from './trustSection.module.css';
+import { ASSETS } from '@/config/assets';
 
 export default function TrustSection() {
   const highlights = [
     {
-      title: 'Expert Installation',
-      description: 'We don&apos;t just sell equipment. Our factory-trained technicians ensure your system is installed for peak performance and longevity.'
+      title: 'The Canadian-Made Moat',
+      description: 'We prioritize ruggedized Canadian equipment from brands like Excalibur and Pompco, built specifically for the North West Ontario climate.'
     },
     {
-      title: 'Largest Stocking Dealer',
-      description: 'Avoid long lead times. We maintain the region&apos;s most comprehensive inventory of pumps, motors, and critical spare parts.'
+      title: 'Consultative Mastery',
+      description: 'Our senior specialists, like Dom, move your experience from a simple transaction to a professional consultation. We ensure the job is done right the first time.'
     },
     {
-      title: 'Northwest Ontario Focus',
-      description: 'Based in Thunder Bay, we understand the unique water and power challenges of our northern environment.'
+      title: 'Immediate Inventory Readiness',
+      description: 'Logistical superiority is our competitive moat. We stock the critical pump and motor units you need today, eliminating costly downtime.'
     }
   ];
 
@@ -36,10 +37,13 @@ export default function TrustSection() {
               ))}
             </div>
           </div>
-          <div className={styles.imagePlaceholder}>
+          <div 
+            className={styles.imagePlaceholder}
+            style={{ backgroundImage: `url(${ASSETS.images.placeholders.installation})`, backgroundSize: 'cover' }}
+          >
             {/* Visual representation of a service truck or installation team */}
             <div className={styles.imgInner}>
-              <span>Authentic Regional Expertise</span>
+              {!ASSETS.images.placeholders.installation && <span>Authentic Regional Expertise</span>}
             </div>
           </div>
         </div>
