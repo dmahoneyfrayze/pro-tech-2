@@ -1,5 +1,7 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from './footer.module.css';
+import { ASSETS } from '@/config/assets';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -10,7 +12,13 @@ export default function Footer() {
         <div className={styles.grid}>
           <div className={styles.companyInfo}>
             <Link href="/" className={styles.logo}>
-              PRO-TECH<span>SALES & SERVICE</span>
+              <Image 
+                src={ASSETS.images.logo} 
+                alt="Pro-Tech Sales & Service" 
+                width={150} 
+                height={50} 
+                className={styles.logoImg}
+              />
             </Link>
             <p className={styles.description}>
               Northwestern Ontario's largest stocking supplier of pumps and electric motors. Leaders in water treatment Solutions.
@@ -34,10 +42,10 @@ export default function Footer() {
           <div className={styles.linksColumn}>
             <h3>Products</h3>
             <ul>
-              <li><Link href="/shop/water-pumps">Water Pumps</Link></li>
-              <li><Link href="/shop/electric-motors">Electric Motors</Link></li>
-              <li><Link href="/shop/purification">Water Purification</Link></li>
-              <li><Link href="/shop/parts">Spare Parts</Link></li>
+              <li><Link href="/shop/pumps">Water Pumps</Link></li>
+              <li><Link href="/shop/motors">Electric Motors</Link></li>
+              <li><Link href="/shop/purification">Water Treatment</Link></li>
+              <li><Link href="/shop">Browse All Inventory</Link></li>
             </ul>
           </div>
           
