@@ -68,6 +68,7 @@
 .guaranteeBox h2 {
   font-family: var(--font-space-grotesk);
   margin-bottom: 24px;
+  color: white; /* Ensure visibility on navy background */
 }
 
 .guaranteeBox p {
