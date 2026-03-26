@@ -9,6 +9,16 @@
   padding: var(--spacing-sm) 0;
 }
 
+.topBar a {
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.topBar a:hover {
+  opacity: 0.7;
+}
+
 .topBarContent {
   display: flex;
   justify-content: space-between;
@@ -18,10 +28,7 @@
 .contactInfo {
   display: flex;
   gap: var(--spacing-md);
-}
-
-.contactInfo span, .contactInfo a {
-  opacity: 0.9;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .topLinks {
