@@ -1,0 +1,66 @@
+import Link from 'next/link';
+import styles from './footer.module.css';
+
+export default function Footer() {
+  const currentYear = new Date().getFullYear();
+  
+  return (
+    <footer className={styles.footer}>
+      <div className="container">
+        <div className={styles.grid}>
+          <div className={styles.companyInfo}>
+            <Link href="/" className={styles.logo}>
+              PRO-TECH<span>SALES & SERVICE</span>
+            </Link>
+            <p className={styles.description}>
+              Northwestern Ontario's largest stocking supplier of pumps and electric motors. Leaders in water treatment Solutions.
+            </p>
+            <div className={styles.address}>
+              541 Tenth Ave<br />
+              Thunder Bay, Ontario P7B 2R3
+            </div>
+          </div>
+          
+          <div className={styles.linksColumn}>
+            <h3>Sectors</h3>
+            <ul>
+              <li><Link href="/industrial">Industrial & Commercial</Link></li>
+              <li><Link href="/residential">Residential Solutions</Link></li>
+              <li><Link href="/services">Pump Installations</Link></li>
+              <li><Link href="/repair">Motor Repair Services</Link></li>
+            </ul>
+          </div>
+          
+          <div className={styles.linksColumn}>
+            <h3>Products</h3>
+            <ul>
+              <li><Link href="/shop/water-pumps">Water Pumps</Link></li>
+              <li><Link href="/shop/electric-motors">Electric Motors</Link></li>
+              <li><Link href="/shop/purification">Water Purification</Link></li>
+              <li><Link href="/shop/parts">Spare Parts</Link></li>
+            </ul>
+          </div>
+          
+          <div className={styles.contactColumn}>
+            <h3>Contact Us</h3>
+            <a href="tel:807-346-8324" className={styles.phone}>807-346-8324</a>
+            <a href="mailto:salestb@protechsales.ca" className={styles.email}>salestb@protechsales.ca</a>
+            <div className={styles.hours}>
+              <p><strong>Hours:</strong></p>
+              <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+              <p>24/7 Emergency Support Available</p>
+            </div>
+          </div>
+        </div>
+        
+        <div className={styles.bottomBar}>
+          <p>&copy; {currentYear} Pro-Tech Sales & Service. All rights reserved.</p>
+          <div className={styles.bottomLinkGroup}>
+            <Link href="/privacy">Privacy Policy</Link>
+            <Link href="/terms">Terms of Service</Link>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}

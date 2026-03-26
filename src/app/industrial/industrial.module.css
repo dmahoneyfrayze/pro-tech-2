@@ -1,0 +1,78 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.hero {
+  background: var(--secondary);
+  color: white;
+  padding: var(--spacing-xl) 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: var(--font-space-grotesk);
+  font-size: 3rem;
+  margin-bottom: var(--spacing-md);
+  color: white;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  margin-bottom: var(--spacing-xl);
+}
+
+.services {
+  padding: var(--spacing-xl) 0;
+  background: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-xl);
+}
+
+.item h3 {
+  font-family: var(--font-space-grotesk);
+  margin-bottom: var(--spacing-md);
+  color: var(--secondary);
+}
+
+.item p {
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.inventory {
+  padding: var(--spacing-xl) 0;
+  background: var(--surface);
+}
+
+.inventoryBox {
+  background: white;
+  padding: var(--spacing-xl);
+  border-radius: var(--radius);
+  text-align: center;
+  box-shadow: var(--shadow-md);
+}
+
+.inventoryBox h2 {
+  font-family: var(--font-space-grotesk);
+  font-size: 2rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.inventoryBox p {
+  max-width: 800px;
+  margin: 0 auto var(--spacing-xl);
+  color: var(--text-muted);
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

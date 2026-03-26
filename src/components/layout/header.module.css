@@ -1,0 +1,95 @@
+.header {
+  width: 100%;
+}
+
+.topBar {
+  background: var(--secondary);
+  color: white;
+  font-size: 0.8rem;
+  padding: var(--spacing-sm) 0;
+}
+
+.topBarContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contactInfo {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.contactInfo span, .contactInfo a {
+  opacity: 0.9;
+}
+
+.topLinks {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.mainNav {
+  background: white;
+  padding: var(--spacing-md) 0;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--font-space-grotesk);
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: var(--secondary);
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.logo span {
+  font-size: 0.75rem;
+  letter-spacing: 0.2rem;
+  color: var(--primary);
+}
+
+.nav ul {
+  display: flex;
+  gap: var(--spacing-lg);
+}
+
+.nav a {
+  font-weight: 600;
+  color: var(--text-main);
+  font-size: 0.95rem;
+}
+
+.nav a:hover {
+  color: var(--primary);
+}
+
+.shopLink {
+  color: var(--primary) !important;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .topBar {
+    display: none;
+  }
+  
+  .nav {
+    display: none;
+  }
+}
