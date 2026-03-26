@@ -3,7 +3,7 @@ export const ASSETS = {
     hero: {
       industrial: '/images/hero-industrial.jpg',
       residential: '/images/hero-residential.jpg',
-      main: '/images/hero-main.jpg',
+      main: '/images/hero-main.png',
     },
     categories: {
       industrial: '/images/cat-industrial.jpg',
