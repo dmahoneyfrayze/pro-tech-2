@@ -10,6 +10,7 @@ export const ASSETS = {
       residential: '/images/cat-residential.jpg',
       services: '/images/cat-services.jpg',
     },
+    logo: '/images/logo.jpg',
     partners: {
       leeson: '/images/brands/leeson.png',
       excalibur: '/images/brands/excalibur.png',
