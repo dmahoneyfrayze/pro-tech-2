@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import styles from './categorySection.module.css';
+import { ASSETS } from '@/config/assets';
 
 export default function CategorySection() {
   const categories = [
@@ -7,14 +8,14 @@ export default function CategorySection() {
       title: 'Commercial & Industrial',
       description: 'Heavy-duty pumps, electric motors, and custom water solutions designed for maximum uptime and efficiency in NW Ontario facilities.',
       link: '/industrial',
-      image: '/industrial_pump_hero.png',
+      image: ASSETS.images.categories.industrial,
       features: ['High-volume systems', 'Motor repair & rewind', 'Industrial purification']
     },
     {
       title: 'Residential Solutions',
       description: 'Reliable water pressure, well pumps, and advanced purification for your family home or cottage. Peace of mind for every tap.',
       link: '/residential',
-      image: '/residential_water_purification.png',
+      image: ASSETS.images.categories.residential,
       features: ['Well pump systems', 'Whole-home filters', 'Emergency repairs']
     }
   ];

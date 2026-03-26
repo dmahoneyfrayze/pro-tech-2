@@ -1,9 +1,8 @@
-import Link from 'next/link';
-import styles from './hero.module.css';
+import { ASSETS } from '@/config/assets';
 
 export default function Hero() {
   return (
-    <section className={styles.hero}>
+    <section className={styles.hero} style={{ backgroundImage: `linear-gradient(rgba(9, 30, 66, 0.8), rgba(9, 30, 66, 0.8)), url(${ASSETS.images.hero.main})` }}>
       <div className="container">
         <div className={styles.content}>
           <div className={styles.badge}>Northwestern Ontario&apos;s Water & Power Authority</div>
