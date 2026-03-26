@@ -15,8 +15,9 @@ export default function Header() {
               <a href="mailto:salestb@protechsales.ca">salestb@protechsales.ca</a>
             </div>
             <div className={styles.topLinks}>
-              <Link href="/about">About Us</Link>
+              <Link href="/about">About</Link>
               <Link href="/contact">Contact</Link>
+              <a href="https://www.facebook.com/profile.php?id=61588130482724" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>FB</a>
             </div>
           </div>
         </div>
