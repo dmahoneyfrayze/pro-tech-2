@@ -1,6 +1,7 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useSearchParams } from 'next/navigation';
 import styles from './quoteForm.module.css';
 
 type Step = 1 | 2 | 3;
@@ -14,10 +15,27 @@ export default function QuoteForm() {
     name: '',
     email: '',
     phone: '',
+    phone: '',
     location: '',
   });
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const searchParams = useSearchParams();
 
-  const nextStep = () => setStep((prev) => (prev + 1) as Step);
+  useEffect(() => {
+    const sector = searchParams.get('sector');
+    const product = searchParams.get('product');
+    const location = searchParams.get('location');
+
+    if (sector || product || location) {
+      setFormData(prev => ({
+        ...prev,
+        sector: (sector as string) || prev.sector,
+        serviceType: (product as string) || prev.serviceType,
+        location: (location as string) || prev.location
+      }));
+      if (sector) setStep(2);
+    }
+  }, [searchParams]);
   const prevStep = () => setStep((prev) => (prev - 1) as Step);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -27,8 +45,8 @@ export default function QuoteForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    alert('Thank you! Your quote request has been sent. Our specialists will contact you shortly.');
-    // Logic to send to API
+    setIsSubmitted(true);
+    // Logic to send to API (e.g. HubSpot, Email)
   };
 
   return (
@@ -149,6 +167,17 @@ export default function QuoteForm() {
           </div>
         )}
       </form>
+      
+      {isSubmitted && (
+        <div className={styles.successOverlay}>
+          <div className={styles.successContent}>
+            <div className={styles.successIcon}>✓</div>
+            <h2>Technical Request Received</h2>
+            <p>Your details have been routed to our specialist team. We prioritize regional downtime and residential emergencies—expect a response shortly.</p>
+            <button onClick={() => setIsSubmitted(false)} className="btn btn-primary">Send Another Request</button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
