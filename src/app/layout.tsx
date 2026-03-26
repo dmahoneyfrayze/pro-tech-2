@@ -25,6 +25,11 @@ export const metadata: Metadata = {
     "Sewage pump installation",
     "Water softener repair 807"
   ],
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({
