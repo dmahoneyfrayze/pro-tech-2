@@ -69,6 +69,32 @@
   margin-right: 8px;
 }
 
+.statsBar {
+  background: var(--surface);
+  padding: 40px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.statGrid {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.statLine strong {
+  display: block;
+  font-family: var(--font-space-grotesk);
+  font-size: 2.5rem;
+  color: var(--primary);
+}
+
+.statLine span {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
 .partnership {
   padding: 100px 0;
   background: var(--secondary);
@@ -76,23 +102,118 @@
 }
 
 .partnershipContent {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 80px;
+  align-items: center;
+  text-align: left;
 }
 
-.partnershipContent h2 {
+.partnershipText h2 {
   font-family: var(--font-space-grotesk);
   font-size: 2.5rem;
+  color: var(--primary-light);
   margin-bottom: 24px;
-  color: white;
 }
 
-.partnershipContent p {
+.partnershipText p {
   font-size: 1.125rem;
   line-height: 1.8;
   opacity: 0.9;
   margin-bottom: 32px;
+}
+
+.benefitList {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.benefitList li {
+  margin-bottom: 12px;
+  padding-left: 28px;
+  position: relative;
+  font-weight: 600;
+}
+
+.benefitList li::before {
+  content: "🛡️";
+  position: absolute;
+  left: 0;
+}
+
+.partnershipBadge {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 60px;
+  border-radius: var(--radius);
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.badgeIcon {
+  font-size: 4rem;
+  margin-bottom: 16px;
+}
+
+.partnershipBadge span {
+  font-family: var(--font-space-grotesk);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--primary-light);
+}
+
+.authorized {
+  padding: 80px 0;
+}
+
+.authBox {
+  background: var(--surface);
+  padding: 60px;
+  border-radius: var(--radius);
+  text-align: center;
+}
+
+.authBox h3 {
+  font-family: var(--font-space-grotesk);
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.authBox p {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: var(--text-muted);
+}
+
+.brandLogos {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.brandLabel {
+  background: white;
+  padding: 12px 24px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  font-size: 0.9rem;
+}
+
+.brandLabel strong {
+  color: var(--primary);
+}
+
+@media (max-width: 900px) {
+  .grid, .partnershipContent, .statGrid {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    gap: 40px;
+  }
 }
 
 .inventory {
