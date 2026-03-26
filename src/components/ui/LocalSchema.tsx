@@ -3,6 +3,7 @@ export default function LocalSchema() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Pro-Tech Sales & Service",
+    "description": "North West Ontario’s premier authority on water and power solutions. Largest regional stocking supplier of Canadian-made pumps and electric motors. Authorized Excalibur, Pompco, and Leeson dealer.",
     "image": "https://www.pro-techsales.ca/logo.png",
     "@id": "https://www.pro-techsales.ca",
     "url": "https://www.pro-techsales.ca",
