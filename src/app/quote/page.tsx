@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import QuoteForm from '@/components/forms/QuoteForm';
@@ -18,7 +19,9 @@ export default function QuotePage() {
             </p>
           </div>
           
-          <QuoteForm />
+          <Suspense fallback={<div>Loading form...</div>}>
+            <QuoteForm />
+          </Suspense>
           
           <div className={styles.support}>
             <p>Need immediate assistance? <strong>Call 807-346-8324</strong> for 24/7 Emergency Support.</p>
