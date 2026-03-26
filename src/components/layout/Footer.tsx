@@ -27,6 +27,11 @@ export default function Footer() {
               541 Tenth Ave<br />
               Thunder Bay, Ontario P7B 2R3
             </div>
+            <div className={styles.social}>
+              <a href="https://www.facebook.com/profile.php?id=61588130482724" target="_blank" rel="noopener noreferrer" className={styles.facebookLink}>
+                Follow us on Facebook
+              </a>
+            </div>
           </div>
           
           <div className={styles.linksColumn}>
