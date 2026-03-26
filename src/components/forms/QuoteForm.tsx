@@ -15,7 +15,6 @@ export default function QuoteForm() {
     name: '',
     email: '',
     phone: '',
-    phone: '',
     location: '',
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -36,6 +35,7 @@ export default function QuoteForm() {
       if (sector) setStep(2);
     }
   }, [searchParams]);
+  const nextStep = () => setStep((prev) => (prev + 1) as Step);
   const prevStep = () => setStep((prev) => (prev - 1) as Step);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
