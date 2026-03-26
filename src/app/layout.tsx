@@ -23,8 +23,13 @@ export const metadata: Metadata = {
     "Water filtration Thunder Bay",
     "UV water treatment systems North West Ontario",
     "Sewage pump installation",
+    "Sewage pump installation",
     "Water softener repair 807"
   ],
+  robots: {
+    index: false,
+    follow: false,
+  },
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon.ico',
