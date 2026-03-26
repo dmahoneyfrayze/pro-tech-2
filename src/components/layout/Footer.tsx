@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className="container">
-        <div className={styles.grid}>
+        <div className={styles.grid} style={{ gridTemplateColumns: 'repeat(5, 1fr)' }}>
           <div className={styles.companyInfo}>
             <Link href="/" className={styles.logo}>
               <Image 
@@ -46,6 +46,16 @@ export default function Footer() {
               <li><Link href="/shop/motors">Electric Motors</Link></li>
               <li><Link href="/shop/purification">Water Treatment</Link></li>
               <li><Link href="/shop">Browse All Inventory</Link></li>
+            </ul>
+          </div>
+          
+          <div className={styles.linksColumn}>
+            <h3>Service Locations</h3>
+            <ul>
+              <li><Link href="/locations/thunder-bay">Thunder Bay & Local</Link></li>
+              <li><Link href="/locations/dryden">Dryden & Regional</Link></li>
+              <li><Link href="/locations/kenora">Kenora & Lake Life</Link></li>
+              <li><Link href="/locations/sioux-lookout">Sioux Lookout Hub</Link></li>
             </ul>
           </div>
           
