@@ -1,6 +1,6 @@
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
-import styles from '../purification/assurance-package/product.module.css'; // Reusing base styles
+import styles from '../../purification/assurance-package/product.module.css'; // Corrected path
 import Link from 'next/link';
 import Image from 'next/image';
 import { ASSETS } from '@/config/assets';
