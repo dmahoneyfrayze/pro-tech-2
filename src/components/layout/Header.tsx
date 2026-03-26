@@ -1,5 +1,7 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from './header.module.css';
+import { ASSETS } from '@/config/assets';
 
 export default function Header() {
   return (
@@ -24,7 +26,13 @@ export default function Header() {
         <div className="container">
           <div className={styles.navContent}>
             <Link href="/" className={styles.logo}>
-              PRO-TECH<span>SALES & SERVICE</span>
+              <Image 
+                src={ASSETS.images.logo} 
+                alt="Pro-Tech Sales & Service" 
+                width={180} 
+                height={60} 
+                className={styles.logoImg}
+              />
             </Link>
             
             <nav className={styles.nav}>
