@@ -1,0 +1,158 @@
+.page {
+  background-color: var(--white);
+}
+
+.productHeader {
+  padding: 60px 0 100px;
+}
+
+.breadcrumb {
+  font-size: 0.85rem;
+  color: #999;
+  margin-bottom: 32px;
+}
+
+.breadcrumb a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: flex-start;
+}
+
+.mainImage {
+  position: relative;
+  height: 500px;
+  background: var(--surface);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.tag {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--secondary);
+  font-weight: 700;
+  font-size: 0.75rem;
+  padding: 4px 12px;
+  border-radius: 100px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+
+.details h1 {
+  font-family: var(--font-space-grotesk);
+  font-size: 3rem;
+  margin-bottom: 16px;
+  line-height: 1.1;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  margin-bottom: 32px;
+}
+
+.price {
+  margin-bottom: 40px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--border);
+}
+
+.amount {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--secondary);
+  font-family: var(--font-space-grotesk);
+}
+
+.installation {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--primary);
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.valueProp h3 {
+  font-family: var(--font-space-grotesk);
+  margin-bottom: 16px;
+}
+
+.valueProp ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.valueProp li {
+  margin-bottom: 12px;
+  padding-left: 24px;
+  position: relative;
+}
+
+.valueProp li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: 900;
+}
+
+.stockInfo {
+  margin-top: 16px;
+  font-size: 0.85rem;
+  color: #27ae60;
+  font-weight: 600;
+}
+
+.techSpecs {
+  padding: 100px 0;
+  background: var(--surface);
+}
+
+.techSpecs h2 {
+  font-family: var(--font-space-grotesk);
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.specGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-xl);
+}
+
+.specItem {
+  background: white;
+  padding: 40px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+}
+
+.specItem h4 {
+  font-family: var(--font-space-grotesk);
+  margin-bottom: 16px;
+  color: var(--primary);
+}
+
+.callout {
+  padding: 100px 0;
+}
+
+.callout h2 {
+  font-family: var(--font-space-grotesk);
+  font-size: 2.5rem;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 900px) {
+  .grid, .specGrid {
+    grid-template-columns: 1fr;
+  }
+}
